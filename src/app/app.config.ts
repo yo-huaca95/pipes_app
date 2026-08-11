@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     {
       provide:LOCALE_ID,
-      useValue:'us'
+      useValue:'es'
     }
   ]
 };

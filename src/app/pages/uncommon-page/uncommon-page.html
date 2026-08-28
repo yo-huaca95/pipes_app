@@ -26,4 +26,9 @@
     <p class="text-primary">
       {{clients() | slice:1:2}}</p>
  </app-card>
+ <app-card title="JsonPipe">
+    <pre>{{clients() | json}}</pre>
+    <pre>{{client() | json}}</pre>
+    <p>{{clients().join(", ") | uppercase}}</p>
+ </app-card>
 </div>

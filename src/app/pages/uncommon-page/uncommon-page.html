@@ -15,4 +15,15 @@
      (click)="deleteClient()" 
      class="btn btn-primary">Borrar cliente</button>
  </app-card>
+   <app-card title="SlicePipe">
+      <b>Original:</b>
+    <p class="text-primary">
+      {{clients().join(", ")}}</p>
+      <b>Slice: 0:2</b>
+    <p class="text-primary">
+      {{clients() | slice:0:2}}</p>
+         <b>Slice: 1:2</b>
+    <p class="text-primary">
+      {{clients() | slice:1:2}}</p>
+ </app-card>
 </div>
